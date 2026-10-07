@@ -245,3 +245,46 @@ index_old.php
 test.php
 test_db.php
 test_session.php
+# Backup files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Test/development files
+test.php
+test_db.php
+test_session.php
+
+# Eclipse workspace/cache accidentally inside project
+.metadata/
+**/.metadata/
+# Backup files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Local testing files
+test.php
+test_db.php
+test_session.php
+
+# Other Eclipse project/workspace files
+assets/images/STQA TYCS/
+
+# Eclipse metadata
+.metadata/
+
+# Eclipse / Java project files
+assets/images/STQA TYCS/.metadata/
+assets/images/STQA TYCS/.classpath
+assets/images/STQA TYCS/.project
+
+# Backup / old project files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Local test files
+test.php
+test_db.php
+test_session.php

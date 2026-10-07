@@ -1,0 +1,1193 @@
+/* =========================================================
+   NexaVault Admin Dashboard - Premium Dark Theme
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #e8eefc;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(37, 99, 235, 0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(124, 92, 255, 0.13),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #020817 0%,
+            #07142f 50%,
+            #0a1838 100%
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.admin-navbar {
+    min-height: 72px;
+    padding: 0 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(3, 12, 30, 0.90);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.25);
+}
+
+
+/* LOGO */
+
+.admin-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+.admin-logo::first-letter {
+    color: #60a5fa;
+}
+
+
+/* NAV LINKS */
+
+.admin-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-nav-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 10px 14px;
+
+    color: #aebbd4;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.admin-nav-links a:hover {
+    color: #ffffff;
+    background: rgba(59,130,246,0.12);
+    transform: translateY(-1px);
+}
+
+.admin-nav-links i {
+    font-size: 16px;
+}
+
+
+/* LOGOUT */
+
+.admin-nav-links .admin-logout {
+    margin-left: 8px;
+
+    color: #ff9a9a;
+
+    border: 1px solid rgba(239,68,68,0.20);
+
+    background: rgba(239,68,68,0.07);
+}
+
+.admin-nav-links .admin-logout:hover {
+    color: #ffffff;
+    background: rgba(239,68,68,0.18);
+    border-color: rgba(239,68,68,0.40);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 35px !important;
+}
+
+.content > h2 {
+    margin-bottom: 28px !important;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #f5f8ff;
+}
+
+
+/* =========================================================
+   SEARCH BOX
+   ========================================================= */
+
+.input-group {
+    max-width: 650px;
+}
+
+.form-control {
+    min-height: 46px;
+
+    background: rgba(8,22,47,0.85) !important;
+
+    color: #edf3ff !important;
+
+    border: 1px solid rgba(120,155,220,0.20) !important;
+
+    border-radius: 12px 0 0 12px !important;
+}
+
+.form-control::placeholder {
+    color: #8191ad !important;
+}
+
+.form-control:focus {
+    background: rgba(10,27,56,0.95) !important;
+
+    color: white !important;
+
+    border-color: #4d7cff !important;
+
+    box-shadow:
+        0 0 0 3px rgba(77,124,255,0.10) !important;
+}
+
+.input-group .btn {
+    border-radius: 0 12px 12px 0 !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    border-radius: 9px;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Primary */
+
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #6366f1
+    ) !important;
+
+    border: none !important;
+
+    box-shadow:
+        0 7px 18px rgba(59,130,246,0.22);
+}
+
+
+/* Success */
+
+.btn-success {
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    ) !important;
+
+    border: none !important;
+
+    box-shadow:
+        0 7px 18px rgba(16,185,129,0.18);
+}
+
+
+/* Warning */
+
+.btn-warning {
+    color: #111827 !important;
+
+    background: #f59e0b !important;
+
+    border: none !important;
+}
+
+
+/* Danger */
+
+.btn-danger {
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #dc2626
+    ) !important;
+
+    border: none !important;
+}
+
+
+/* Info */
+
+.btn-info {
+    color: white !important;
+
+    background: linear-gradient(
+        135deg,
+        #06b6d4,
+        #0891b2
+    ) !important;
+
+    border: none !important;
+}
+
+
+/* =========================================================
+   STATISTICS CARDS
+   ========================================================= */
+
+.content .row:first-of-type {
+    margin-top: 25px;
+}
+
+.content .row:first-of-type .card {
+    min-height: 155px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,38,78,0.94),
+            rgba(8,21,45,0.94)
+        ) !important;
+
+    border: 1px solid rgba(120,155,220,0.15) !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.25) !important;
+
+    transition: all 0.3s ease;
+}
+
+.content .row:first-of-type .card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -55px;
+    top: -65px;
+
+    border-radius: 50%;
+
+    background: rgba(59,130,246,0.12);
+
+    filter: blur(3px);
+}
+
+.content .row:first-of-type .card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(76,125,255,0.35) !important;
+
+    box-shadow:
+        0 22px 50px rgba(0,0,0,0.35),
+        0 0 25px rgba(55,100,255,0.08) !important;
+}
+
+.content .row:first-of-type .card h1 {
+    position: relative;
+    z-index: 2;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    margin: 0;
+
+    color: #ffffff;
+}
+
+.content .row:first-of-type .card p {
+    position: relative;
+    z-index: 2;
+
+    margin: 7px 0 0;
+
+    color: #93a5c4;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.content h3 {
+    color: #f5f8ff;
+
+    font-size: 23px;
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   TABLE CONTAINER
+   ========================================================= */
+
+.table {
+    margin-bottom: 0;
+
+    color: #dce6fa !important;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: rgba(7,19,40,0.88);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.25) !important;
+}
+
+
+/* TABLE HEADER */
+
+.table thead th {
+    padding: 15px 14px;
+
+    color: #ffffff !important;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    border: none !important;
+
+    white-space: nowrap;
+}
+
+
+/* USERS TABLE */
+
+.table-dark {
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #4f46e5
+        ) !important;
+}
+
+.table-dark th {
+    background: transparent !important;
+}
+
+
+/* FILE TABLE */
+
+.table-primary {
+    background:
+        linear-gradient(
+            135deg,
+            #075985,
+            #2563eb
+        ) !important;
+}
+
+.table-primary th {
+    background: transparent !important;
+}
+
+
+/* TABLE BODY */
+
+.table tbody tr {
+    background: rgba(11,27,55,0.82);
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background: rgba(36,66,120,0.40);
+}
+
+.table tbody td {
+    padding: 14px;
+
+    vertical-align: middle;
+
+    color: #dce6fa !important;
+
+    border-color: rgba(255,255,255,0.07) !important;
+}
+
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.badge {
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.table td .btn {
+    margin-right: 4px;
+    margin-bottom: 3px;
+
+    min-width: 65px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   HORIZONTAL LINES
+   ========================================================= */
+
+hr {
+    margin: 45px 0;
+
+    border-color: rgba(255,255,255,0.08) !important;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030b1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #243d70;
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3d64a5;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .admin-navbar {
+        padding: 0 20px;
+    }
+
+    .admin-nav-links {
+        gap: 2px;
+    }
+
+    .admin-nav-links a {
+        padding: 9px 10px;
+    }
+
+    .content {
+        padding: 25px !important;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .admin-navbar {
+        position: relative;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 18px 20px;
+
+        gap: 15px;
+    }
+
+    .admin-nav-links {
+        width: 100%;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+    }
+
+    .admin-nav-links a {
+        flex-shrink: 0;
+    }
+
+    .content {
+        padding: 20px !important;
+    }
+
+    .table {
+        min-width: 850px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .content > h2 {
+        font-size: 25px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content .row:first-of-type .card {
+        min-height: 135px;
+    }
+
+    .content .row:first-of-type .card h1 {
+        font-size: 32px;
+    }
+}
+/* =========================================================
+   ADMIN TABLE - FIX WHITE BACKGROUND / VISIBILITY
+   ========================================================= */
+
+/* Remove Bootstrap white table background */
+.content .table {
+    --bs-table-bg: transparent !important;
+    --bs-table-color: #dce6fa !important;
+    --bs-table-border-color: rgba(255,255,255,0.08) !important;
+
+    background: transparent !important;
+    color: #dce6fa !important;
+
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+
+/* Table body */
+.content .table tbody {
+    background: #0b1934 !important;
+}
+
+
+/* Every row */
+.content .table tbody tr {
+    background: #0b1934 !important;
+
+    color: #dce6fa !important;
+
+    border-bottom: 1px solid rgba(255,255,255,0.07) !important;
+}
+
+
+/* Every cell */
+.content .table tbody td {
+    background: #0b1934 !important;
+
+    color: #dce6fa !important;
+
+    border-color: rgba(255,255,255,0.07) !important;
+
+    padding: 15px 14px !important;
+
+    vertical-align: middle;
+}
+
+
+/* Hover */
+.content .table tbody tr:hover {
+    background: #122951 !important;
+}
+
+.content .table tbody tr:hover td {
+    background: #122951 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   USER TABLE HEADER
+   ========================================================= */
+
+.content .table-dark {
+    --bs-table-bg: transparent !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #4f46e5
+        ) !important;
+}
+
+.content .table-dark th {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   FILE TABLE HEADER
+   ========================================================= */
+
+.content .table-primary {
+    --bs-table-bg: transparent !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #075985,
+            #2563eb
+        ) !important;
+}
+
+.content .table-primary th {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   TABLE TEXT
+   ========================================================= */
+
+.content .table tbody td a {
+    color: #dce6fa !important;
+}
+
+.content .table tbody td a:hover {
+    color: #ffffff !important;
+}
+
+
+/* File names */
+.content .table tbody td:nth-child(2) {
+    color: #eaf1ff !important;
+    font-weight: 500;
+}
+
+
+/* Email */
+.content .table tbody td:nth-child(3) {
+    color: #b8c7df !important;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.content .table .btn {
+    color: #ffffff !important;
+
+    font-weight: 600;
+
+    border: none !important;
+}
+
+
+/* Block */
+.content .table .btn-warning {
+    color: #111827 !important;
+}
+
+
+/* =========================================================
+   MOBILE / SMALL SCREEN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .content .table {
+        min-width: 850px;
+    }
+}
+/* =========================================================
+   ANALYTICS SECTION
+   ========================================================= */
+
+.admin-divider {
+    border-color: rgba(255,255,255,0.10) !important;
+    opacity: 1;
+}
+
+.admin-analytics {
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.analytics-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.analytics-heading h3 {
+    color: #f4f7ff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.analytics-heading h3 i {
+    color: #7c5cff;
+    margin-right: 8px;
+}
+
+.analytics-heading p {
+    color: #8fa2c2;
+    margin: 0;
+}
+
+.section-label {
+    display: block;
+    color: #6f9cff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   ANALYTICS CARDS
+   ========================================================= */
+
+.analytics-card {
+    min-height: 145px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(16, 35, 72, 0.95),
+            rgba(7, 20, 43, 0.95)
+        );
+
+    border: 1px solid rgba(120,155,220,0.14);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.20);
+
+    transition: 0.3s ease;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(91,130,255,0.35);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.30);
+}
+
+
+.analytics-card small {
+    display: block;
+
+    color: #91a3c1;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+.analytics-card h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+.analytics-card h2 span {
+    font-size: 13px;
+    color: #8fa2c2;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   ANALYTICS ICONS
+   ========================================================= */
+
+.analytics-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    font-size: 22px;
+}
+
+.analytics-icon.blue {
+    background: rgba(37,99,235,0.18);
+    color: #60a5fa;
+}
+
+.analytics-icon.red {
+    background: rgba(239,68,68,0.15);
+    color: #f87171;
+}
+
+.analytics-icon.purple {
+    background: rgba(124,92,255,0.18);
+    color: #a78bfa;
+}
+
+.analytics-icon.green {
+    background: rgba(16,185,129,0.16);
+    color: #34d399;
+}
+
+
+.analytics-status {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #6ee7b7;
+
+    font-size: 10px;
+}
+
+.analytics-status.danger {
+    color: #fca5a5;
+}
+
+
+/* =========================================================
+   ANALYTICS PANELS
+   ========================================================= */
+
+.analytics-panel {
+    padding: 24px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(13,31,64,0.96),
+            rgba(7,20,43,0.96)
+        );
+
+    border: 1px solid rgba(120,155,220,0.14);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.22);
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.panel-header h4 {
+    color: #f4f7ff;
+    margin: 5px 0 0;
+
+    font-size: 18px;
+}
+
+.panel-icon {
+    font-size: 24px;
+    color: #7c5cff;
+}
+
+
+/* =========================================================
+   FILE TYPE ANALYTICS
+   ========================================================= */
+
+.file-type-list {
+    margin-top: 20px;
+}
+
+.file-type-row {
+    margin-bottom: 19px;
+}
+
+.file-type-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+}
+
+.file-type-info span {
+    color: #c8d5ea;
+    font-size: 12px;
+}
+
+.file-type-info strong {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.analytics-progress {
+    width: 100%;
+    height: 7px;
+
+    background: rgba(255,255,255,0.07);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.analytics-progress-bar {
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3b82f6,
+            #7c5cff
+        );
+
+    transition: width 0.5s ease;
+}
+
+.file-type-row > small {
+    display: block;
+
+    text-align: right;
+
+    margin-top: 4px;
+
+    color: #7185a5;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SYSTEM STATISTICS
+   ========================================================= */
+
+.system-stat {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.system-stat span {
+    color: #9eafca;
+
+    font-size: 12px;
+}
+
+.system-stat span i {
+    color: #6f9cff;
+
+    margin-right: 8px;
+}
+
+.system-stat strong {
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+.secure-text {
+    color: #34d399 !important;
+}
+
+
+/* =========================================================
+   SYSTEM STATUS
+   ========================================================= */
+
+.system-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    padding: 11px 14px;
+
+    border-radius: 10px;
+
+    background: rgba(16,185,129,0.08);
+
+    color: #6ee7b7;
+
+    font-size: 11px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+
+    box-shadow:
+        0 0 10px rgba(34,197,94,0.7);
+}
+
+
+/* =========================================================
+   EMPTY ANALYTICS
+   ========================================================= */
+
+.empty-analytics {
+    text-align: center;
+
+    padding: 40px 10px;
+
+    color: #7185a5;
+}
+
+.empty-analytics i {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .analytics-heading h3 {
+        font-size: 21px;
+    }
+
+    .analytics-card {
+        min-height: 125px;
+    }
+
+    .analytics-panel {
+        padding: 18px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+

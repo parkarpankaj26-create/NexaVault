@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown and Combo Box Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        #suggestions {
+            display: none;
+            border: 1px solid gray;
+            width: 200px;
+        }
+
+        .item {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .item:hover {
+            background-color: lightgray;
+        }
+    </style>
+
+    <script>
+        function showSuggestions() {
+            document.getElementById("suggestions").style.display = "block";
+        }
+
+        function selectCity(city) {
+            document.getElementById("cityBox").value = city;
+            document.getElementById("suggestions").style.display = "none";
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h1>Dropdown List and Combo Box Testing</h1>
+
+
+<!-- Dropdown List -->
+
+<h2>Dropdown List</h2>
+
+<label>Select Country:</label>
+
+<select id="country">
+
+    <option value="US">United States</option>
+
+    <option value="IN" selected>
+        India
+    </option>
+
+    <option value="UK">
+        United Kingdom
+    </option>
+
+    <option value="CA">
+        Canada
+    </option>
+
+    <option value="AU">
+        Australia
+    </option>
+
+</select>
+
+
+<br><br>
+
+
+<!-- Combo Box -->
+
+<h2>Combo Box</h2>
+
+<label>Select City:</label>
+
+<input type="text"
+       id="cityBox"
+       placeholder="Enter city"
+       onkeyup="showSuggestions()">
+
+
+<div id="suggestions">
+
+    <div class="item"
+         onclick="selectCity('Mumbai')">
+         Mumbai
+    </div>
+
+    <div class="item"
+         onclick="selectCity('Delhi')">
+         Delhi
+    </div>
+
+    <div class="item"
+         onclick="selectCity('Pune')">
+         Pune
+    </div>
+
+    <div class="item"
+         onclick="selectCity('Chennai')">
+         Chennai
+    </div>
+
+</div>
+
+
+<br><br>
+
+<button id="submit">
+    Submit
+</button>
+
+
+</body>
+</html>

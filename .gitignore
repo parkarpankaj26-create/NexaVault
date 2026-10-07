@@ -1,0 +1,247 @@
+# XAMPP / local files
+uploads/*
+!uploads/.gitkeep
+
+# Database/local configuration
+.env
+config.local.php
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backups
+*.bak
+*.old
+
+# PHP session files
+session_*
+# Eclipse workspace files
+.metadata/
+**/.metadata/
+
+# Backup files
+*_backup.php
+index_old.php
+
+# Local testing files
+test.php
+test_db.php
+test_session.php
+
+# Backup / temporary development files
+dashboard_backup.php
+index_old.php
+login_backup.php
+test.php
+test_db.php
+test_session.php
+# Old / backup / testing files
+dashboard_backup.php
+login_backup.php
+index_old.php
+test.php
+test_db.php
+test_session.php
+# Backup files
+*_backup.php
+*_old.php
+
+# Development/test files
+test.php
+test_db.php
+test_session.php
+generate_missing_hashes.php
+
+# Backup / old project files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Eclipse project/cache files
+assets/images/STQA TYCS/.metadata/
+
+# Backup / old project files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Eclipse project files
+.metadata/
+.settings/
+.classpath
+.project
+
+# Backup / old files
+*_backup.php
+index_old.php
+
+# Test files
+test.php
+test_db.php
+test_session.php
+
+# Eclipse project/cache files
+.metadata/
+
+# Backup files
+*_backup.php
+*_old.php
+
+# Test/development files
+test.php
+test_db.php
+test_session.php
+
+# Eclipse/project metadata
+.metadata/
+# Backup / old files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Local testing files
+test.php
+test_db.php
+test_session.php
+
+# Eclipse workspace / temporary project
+assets/images/STQA TYCS/
+
+# Local backup / testing files
+dashboard_backup.php
+login_backup.php
+index_old.php
+test.php
+test_db.php
+test_session.php
+
+# Backup files
+*_backup.php
+*_old.php
+
+# Development / testing files
+test.php
+test_db.php
+test_session.php
+
+# Eclipse workspace
+.metadata/
+
+# Local backup / testing files
+dashboard_backup.php
+login_backup.php
+index_old.php
+test.php
+test_db.php
+test_session.php
+
+# Backup files
+*_backup.php
+index_old.php
+
+# Test / temporary PHP files
+test.php
+test_db.php
+test_session.php
+generate_missing_hashes.php
+
+# Eclipse workspace / metadata
+.metadata/
+**/.metadata/
+assets/images/STQA TYCS/
+
+# Backup / testing files
+*_backup.php
+*_old.php
+test.php
+test_db.php
+test_session.php
+
+# Eclipse project files
+.metadata/
+# Backup / old files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Testing files
+test.php
+test_db.php
+test_session.php
+
+# Backup / old files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Local testing files
+test.php
+test_db.php
+test_session.php
+# Eclipse / workspace files
+.metadata/
+.settings/
+.classpath
+.project
+.factorypath
+
+# Backup / old files
+*_backup.php
+*_old.php
+
+# Test / temporary PHP files
+test.php
+test_db.php
+test_session.php
+
+# Unrelated Eclipse / STQA files
+assets/images/STQA TYCS/
+
+# Backup / old project files
+dashboard_backup.php
+login_backup.php
+index_old.php
+
+# Local testing files
+test.php
+test_db.php
+test_session.php
+# Backup / old project files
+*_backup.php
+*_old.php
+
+# Eclipse project files
+.metadata/
+
+# Backup files
+*_backup.php
+index_old.php
+
+# Local testing files
+test.php
+test_db.php
+test_session.php
+
+# Eclipse workspace / metadata
+.metadata/
+**/.metadata/
+
+# Backup / temporary project files
+*_backup.php
+index_old.php
+test.php
+test_db.php
+test_session.php

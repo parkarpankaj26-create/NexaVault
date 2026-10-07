@@ -1,0 +1,61 @@
+package prac;
+
+
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+
+
+public class WebPageObjectCounter
+{
+	public static void main(String[] args) {
+
+        // Set ChromeDriver path
+        System.setProperty("webdriver.msedge.driver", "D:\\STQA TYCS\\practical\\msedgedriver.exe");
+
+        // Launch browser
+        WebDriver driver = new EdgeDriver();
+
+        // Open web page
+        driver.get("https://www.google.com");
+
+        // Maximize browser
+        driver.manage().window().maximize();
+
+        // Count links
+        List<WebElement> links = driver.findElements(By.tagName("a"));
+        int linkCount = links.size();
+
+        // Count images
+        List<WebElement> images = driver.findElements(By.tagName("img"));
+        int imageCount = images.size();
+
+        // Count buttons
+        List<WebElement> buttons = driver.findElements(By.tagName("button"));
+        int buttonCount = buttons.size();
+
+        // Count input elements
+        List<WebElement> inputs = driver.findElements(By.tagName("input"));
+        int inputCount = inputs.size();
+
+        // Calculate total objects
+        int totalObjects = linkCount + imageCount + buttonCount + inputCount;
+
+        // Display results
+        System.out.println("===== Web Page Object Count =====");
+        System.out.println("Total Links       : " + linkCount);
+        System.out.println("Total Images      : " + imageCount);
+        System.out.println("Total Buttons     : " + buttonCount);
+        System.out.println("Total Input Fields: " + inputCount);
+        System.out.println("---------------------------------");
+        System.out.println("Total Objects     : " + totalObjects);
+
+        // Close browser
+        driver.quit();
+    }
+}
+

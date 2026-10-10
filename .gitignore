@@ -267,7 +267,7 @@ index_old.php
 test.php
 test_db.php
 test_session.php
-
+chat
 # Other Eclipse project/workspace files
 assets/images/STQA TYCS/
 
@@ -287,4 +287,4 @@ index_old.php
 # Local test files
 test.php
 test_db.php
-test_session.php
+test_session.php 

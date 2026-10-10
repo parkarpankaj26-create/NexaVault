@@ -625,317 +625,215 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 
 <style>
-
+    
 * {
     box-sizing: border-box;
 }
 
 body {
-
     min-height: 100vh;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     margin: 0;
-
     padding: 20px;
-
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
 
     background:
         radial-gradient(
             circle at 20% 20%,
-            rgba(37,99,235,.20),
+            rgba(37, 99, 235, .06),
             transparent 30%
         ),
-
         radial-gradient(
             circle at 80% 80%,
-            rgba(124,92,255,.18),
+            rgba(124, 92, 255, .06),
             transparent 30%
         ),
-
         linear-gradient(
             135deg,
-            #020817,
-            #07142f,
-            #0a1838
+            #f8fafc,
+            #f1f5f9,
+            #ffffff
         );
 
-    color: #e8eefc;
+    color: #1e293b;
 }
-
 
 .share-card {
-
     width: 100%;
-
     max-width: 520px;
-
     padding: 35px;
-
     border-radius: 24px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(16,32,65,.97),
-            rgba(8,21,45,.97)
-        );
-
-    border:
-        1px solid
-        rgba(120,155,220,.18);
-
-    box-shadow:
-        0 25px 70px
-        rgba(0,0,0,.40);
-
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 20px 55px rgba(15, 23, 42, .10);
 }
-
 
 .logo-icon {
-
     width: 75px;
-
     height: 75px;
-
     margin: auto;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-radius: 20px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #3b82f6,
-            #6366f1
-        );
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #6366f1
+    );
 
-    color: white;
-
+    color: #ffffff;
     font-size: 34px;
 
-    box-shadow:
-        0 12px 30px
-        rgba(59,130,246,.30);
-
+    box-shadow: 0 10px 25px rgba(59, 130, 246, .20);
 }
-
 
 h2 {
-
-    color: #f5f8ff;
-
+    color: #0f172a;
     font-weight: 700;
-
 }
-
 
 .subtitle {
-
-    color: #91a0bb;
-
+    color: #64748b;
 }
-
 
 .file-box {
-
     display: flex;
-
     align-items: center;
-
     gap: 15px;
-
     padding: 18px;
-
     margin: 25px 0;
-
     border-radius: 15px;
-
-    background:
-        rgba(255,255,255,.05);
-
-    border:
-        1px solid
-        rgba(255,255,255,.08);
-
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
 }
-
 
 .file-icon {
-
     width: 50px;
-
     height: 50px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
+    flex-shrink: 0;
     border-radius: 12px;
-
-    background:
-        rgba(59,130,246,.15);
-
-    color: #60a5fa;
-
+    background: #dbeafe;
+    color: #2563eb;
     font-size: 23px;
-
 }
-
 
 .file-name {
-
     font-weight: 600;
-
-    color: #eaf1ff;
-
+    color: #1e293b;
     word-break: break-word;
-
 }
-
 
 .file-info {
-
-    color: #8495b3;
-
+    color: #64748b;
     font-size: 13px;
-
+    overflow-wrap: anywhere;
 }
-
 
 .form-label {
-
-    color: #dce6fa;
-
+    color: #334155;
+    font-weight: 600;
 }
-
 
 .form-control {
-
-    background:
-        rgba(5,16,35,.85);
-
-    color: white;
-
-    border:
-        1px solid
-        rgba(120,155,220,.20);
-
+    background: #ffffff;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
     min-height: 48px;
-
+    padding: 12px 14px;
 }
 
+.form-control::placeholder {
+    color: #94a3b8;
+}
 
 .form-control:focus {
-
-    background:
-        rgba(5,16,35,.95);
-
-    color: white;
-
+    background: #ffffff;
+    color: #1e293b;
     border-color: #4d7cff;
-
-    box-shadow:
-        0 0 0 3px
-        rgba(77,124,255,.12);
-
+    box-shadow: 0 0 0 3px rgba(77, 124, 255, .12);
 }
-
 
 .btn-primary {
-
     min-height: 48px;
-
     border: none;
+    border-radius: 12px;
+    color: #ffffff;
 
-    background:
-        linear-gradient(
-            135deg,
-            #3b82f6,
-            #6366f1
-        );
-
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #6366f1
+    );
 }
 
-
-.security {
-
-    text-align: center;
-
-    margin-top: 20px;
-
-    color: #8495b3;
-
-    font-size: 13px;
-
+.btn-primary:hover {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+    color: #ffffff;
 }
 
+.btn-success {
+    min-height: 48px;
+    border-radius: 12px;
+}
+
+.alert-danger {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    border-radius: 12px;
+}
 
 .success-box {
-
     padding: 20px;
-
     border-radius: 15px;
-
-    background:
-        rgba(16,185,129,.10);
-
-    border:
-        1px solid
-        rgba(16,185,129,.20);
-
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
 }
 
+.success-box h5 {
+    color: #166534 !important;
+}
+
+.success-box p {
+    color: #475569 !important;
+}
 
 .download-info {
-
     margin-top: 10px;
-
     text-align: center;
-
-    color: #8fa2c2;
-
-    font-size: 11px;
-
+    color: #64748b;
+    font-size: 13px;
 }
-
 
 .download-info strong {
-
-    color: #60a5fa;
-
+    color: #2563eb;
 }
 
-
-/* MOBILE */
+.security {
+    text-align: center;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
 
 @media (max-width: 576px) {
-
     .share-card {
-
         padding: 25px 20px;
-
     }
-
 }
-
-</style>
+    </style>
 
 </head>
 

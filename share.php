@@ -262,263 +262,135 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <style>
 
+
 body {
-
     min-height: 100vh;
-
     background:
-        radial-gradient(
-            circle at 10% 20%,
-            rgba(37,99,235,.18),
-            transparent 35%
-        ),
-
-        radial-gradient(
-            circle at 90% 80%,
-            rgba(139,92,246,.16),
-            transparent 35%
-        ),
-
-        linear-gradient(
-            135deg,
-            #07111f 0%,
-            #0b172a 50%,
-            #101827 100%
-        );
-
-    color: #e5e7eb;
-
+        radial-gradient(circle at 10% 20%, rgba(37, 99, 235, .06), transparent 35%),
+        radial-gradient(circle at 90% 80%, rgba(139, 92, 246, .06), transparent 35%),
+        linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #ffffff 100%);
+    color: #1e293b;
 }
-
 
 .share-container {
-
     max-width: 750px;
-
     margin: 60px auto;
-
     padding: 0 15px;
-
 }
-
 
 .share-card {
-
-    border:
-        1px solid
-        rgba(255,255,255,.10);
-
+    border: 1px solid #e2e8f0;
     border-radius: 24px;
-
-    background:
-        rgba(15,23,42,.82);
-
-    backdrop-filter:
-        blur(18px);
-
-    box-shadow:
-        0 25px 70px
-        rgba(0,0,0,.45);
-
-    color: #e5e7eb;
-
+    background: #ffffff;
+    box-shadow: 0 15px 45px rgba(15, 23, 42, .08);
+    color: #1e293b;
 }
-
 
 .file-icon {
-
     font-size: 65px;
-
-    color: #60a5fa;
-
+    color: #2563eb;
 }
-
 
 .file-name {
-
     word-break: break-word;
-
-    color: #ffffff;
-
+    color: #1e293b;
 }
-
 
 .alert-info {
-
-    background:
-        rgba(37,99,235,.10);
-
-    border:
-        1px solid
-        rgba(96,165,250,.25);
-
-    color: #dbeafe;
-
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
 }
-
 
 .alert-success {
-
-    background:
-        rgba(16,185,129,.10);
-
-    border:
-        1px solid
-        rgba(16,185,129,.25);
-
-    color: #d1fae5;
-
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
 }
-
 
 .alert-danger {
-
-    background:
-        rgba(239,68,68,.10);
-
-    border:
-        1px solid
-        rgba(239,68,68,.25);
-
-    color: #fecaca;
-
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
 }
-
 
 .form-label {
-
-    color: #e5e7eb;
-
+    color: #334155;
 }
-
 
 .form-control,
 .form-select {
-
-    background:
-        rgba(255,255,255,.06);
-
-    border:
-        1px solid
-        rgba(255,255,255,.12);
-
-    color: #ffffff;
-
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
     border-radius: 12px;
-
     padding: 12px 14px;
-
 }
-
 
 .form-control::placeholder {
-
-    color: #64748b;
-
+    color: #94a3b8;
 }
-
 
 .form-control:focus,
 .form-select:focus {
-
-    background:
-        rgba(255,255,255,.08);
-
-    color: #ffffff;
-
+    background: #ffffff;
+    color: #1e293b;
     border-color: #3b82f6;
-
-    box-shadow:
-        0 0 0 0.2rem
-        rgba(59,130,246,.15);
-
+    box-shadow: 0 0 0 .2rem rgba(59, 130, 246, .12);
 }
-
 
 .form-select option {
-
-    background: #0f172a;
-
-    color: #ffffff;
-
+    background: #ffffff;
+    color: #1e293b;
 }
-
 
 .btn-primary {
-
-    background:
-        linear-gradient(
-            135deg,
-            #2563eb,
-            #7c3aed
-        );
-
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
     border: none;
-
     border-radius: 12px;
-
+    color: #ffffff;
 }
 
-
-.btn-success {
-
-    border-radius: 12px;
-
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+    color: #ffffff;
 }
 
-
+.btn-success,
 .btn-danger {
-
     border-radius: 12px;
-
 }
-
 
 .btn-outline-secondary {
-
-    border-color:
-        rgba(255,255,255,.18);
-
-    color: #cbd5e1;
-
+    border-color: #cbd5e1;
+    color: #475569;
     border-radius: 12px;
-
 }
-
 
 .btn-outline-secondary:hover {
-
-    background:
-        rgba(255,255,255,.08);
-
-    color: #ffffff;
-
+    background: #f1f5f9;
+    color: #1e293b;
+    border-color: #94a3b8;
 }
-
 
 .qr-box {
-
     display: inline-block;
-
     padding: 20px;
-
     background: #ffffff;
-
+    border: 1px solid #e2e8f0;
     border-radius: 18px;
-
 }
 
+small,
+.form-text {
+    color: #64748b;
+}
 
-@media(max-width:576px) {
-
+@media (max-width: 576px) {
     .share-container {
-
         margin: 25px auto;
-
     }
-
 }
-
 </style>
 
 </head>

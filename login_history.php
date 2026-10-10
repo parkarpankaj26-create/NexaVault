@@ -118,349 +118,221 @@ rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <style>
-
-body {
-
-    min-height:100vh;
-
-    margin:0;
-
-    color:#e8eefc;
-
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
-    background:
-        radial-gradient(
-            circle at 10% 20%,
-            rgba(37,99,235,.18),
-            transparent 35%
-        ),
-
-        radial-gradient(
-            circle at 90% 80%,
-            rgba(139,92,246,.15),
-            transparent 35%
-        ),
-
-        linear-gradient(
-            135deg,
-            #020817,
-            #07142f,
-            #0a1838
-        );
-
-}
-
-
-.history-page {
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:40px 20px 60px;
-
-}
-
-
-/* =====================================================
-   HEADER
-===================================================== */
-
-.page-label {
-
-    color:#6ea1ff;
-
-    font-size:10px;
-
-    font-weight:800;
-
-    letter-spacing:2px;
-
-}
-
-
-.page-title {
-
-    margin:5px 0 0;
-
-    color:#ffffff;
-
-    font-size:30px;
-
-    font-weight:800;
-
-}
-
-
-.page-subtitle {
-
-    color:#91a0bb;
-
-    margin-top:5px;
-
-}
-
-
-/* =====================================================
-   CARD
-===================================================== */
-
-.history-card {
-
-    padding:25px;
-
-    border-radius:22px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(15,31,63,.96),
-            rgba(7,20,43,.96)
-        );
-
-    border:
-        1px solid
-        rgba(120,155,220,.14);
-
-    box-shadow:
-        0 25px 65px
-        rgba(0,0,0,.30);
-
-}
-
-
-/* =====================================================
-   STAT
-===================================================== */
-
-.stat-box {
-
-    padding:18px;
-
-    border-radius:15px;
-
-    background:
-        rgba(255,255,255,.035);
-
-    border:
-        1px solid
-        rgba(255,255,255,.06);
-
-}
-
-
-.stat-box span {
-
-    display:block;
-
-    color:#7184a3;
-
-    font-size:10px;
-
-}
-
-
-.stat-box strong {
-
-    display:block;
-
-    margin-top:4px;
-
-    color:#ffffff;
-
-    font-size:24px;
-
-}
-
-
-/* =====================================================
-   HISTORY ITEM
-===================================================== */
-
-.history-item {
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:20px;
-
-    padding:17px;
-
-    margin-top:12px;
-
-    border-radius:15px;
-
-    background:
-        rgba(255,255,255,.035);
-
-    border:
-        1px solid
-        rgba(255,255,255,.06);
-
-}
-
-
-.history-left {
-
-    display:flex;
-
-    align-items:center;
-
-    gap:13px;
-
-    min-width:0;
-
-}
-
-
-.status-icon {
-
-    width:45px;
-
-    height:45px;
-
-    flex-shrink:0;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    border-radius:13px;
-
-    font-size:20px;
-
-}
-
-
-.success-icon {
-
-    color:#34d399;
-
-    background:
-        rgba(16,185,129,.10);
-
-}
-
-
-.failed-icon {
-
-    color:#f87171;
-
-    background:
-        rgba(239,68,68,.10);
-
-}
-
-
-.history-title {
-
-    color:#ffffff;
-
-    font-size:13px;
-
-    font-weight:700;
-
-}
-
-
-.history-info {
-
-    margin-top:4px;
-
-    color:#7184a3;
-
-    font-size:10px;
-
-    line-height:1.7;
-
-}
-
-
-.history-time {
-
-    color:#7184a3;
-
-    font-size:10px;
-
-    white-space:nowrap;
-
-}
-
-
-/* =====================================================
-   EMPTY
-===================================================== */
-
-.empty-history {
-
-    text-align:center;
-
-    padding:70px 20px;
-
-    color:#91a0bb;
-
-}
-
-
-.empty-history i {
-
-    display:block;
-
-    font-size:45px;
-
-    color:#55739e;
-
-    margin-bottom:15px;
-
-}
-
-
-/* =====================================================
-   BUTTONS
-===================================================== */
-
-.btn-outline-light {
-
-    border-color:
-        rgba(255,255,255,.15);
-
-    color:#cbd5e1;
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media(max-width:768px) {
-
+    body {
+        min-height: 100vh;
+        margin: 0;
+        color: #1e293b;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:
+            radial-gradient(
+                circle at 10% 20%,
+                rgba(59, 130, 246, 0.08),
+                transparent 35%
+            ),
+            radial-gradient(
+                circle at 90% 80%,
+                rgba(139, 92, 246, 0.07),
+                transparent 35%
+            ),
+            linear-gradient(
+                135deg,
+                #f8fafc,
+                #f1f5f9,
+                #eff6ff
+            );
+    }
+
+    .history-page {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px 60px;
+    }
+
+    /* HEADER */
+    .page-label {
+        color: #2563eb;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .page-title {
+        margin: 5px 0 0;
+        color: #0f172a;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .page-subtitle {
+        color: #64748b;
+        margin-top: 5px;
+    }
+
+    /* MAIN CARD */
+    .history-card {
+        padding: 25px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.96);
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.07);
+    }
+
+    /* STATISTICS */
+    .stat-box {
+        padding: 18px;
+        border-radius: 15px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+    }
+
+    .stat-box span {
+        display: block;
+        color: #64748b;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .stat-box strong {
+        display: block;
+        margin-top: 4px;
+        color: #0f172a;
+        font-size: 24px;
+    }
+
+    /* HISTORY ITEM */
     .history-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 17px;
+        margin-top: 12px;
+        border-radius: 15px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        transition: background 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease;
+    }
 
-        align-items:flex-start;
+    .history-item:hover {
+        background: #f8fafc;
+        border-color: #bfdbfe;
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.05);
+    }
 
-        flex-direction:column;
+    .history-left {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        min-width: 0;
+    }
 
+    .status-icon {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13px;
+        font-size: 20px;
+    }
+
+    .success-icon {
+        color: #059669;
+        background: #d1fae5;
+    }
+
+    .failed-icon {
+        color: #dc2626;
+        background: #fee2e2;
+    }
+
+    .history-title {
+        color: #0f172a;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .history-info {
+        margin-top: 4px;
+        color: #64748b;
+        font-size: 11px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
     }
 
     .history-time {
-
-        white-space:normal;
-
+        color: #64748b;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
-}
+    /* EMPTY STATE */
+    .empty-history {
+        text-align: center;
+        padding: 70px 20px;
+        color: #64748b;
+    }
 
+    .empty-history i {
+        display: block;
+        font-size: 45px;
+        color: #94a3b8;
+        margin-bottom: 15px;
+    }
+
+    .empty-history h5 {
+        color: #0f172a !important;
+    }
+
+    /* BUTTONS */
+    .btn-outline-light {
+        border: 1px solid #cbd5e1;
+        color: #334155;
+        background: #ffffff;
+    }
+
+    .btn-outline-light:hover {
+        color: #1d4ed8;
+        background: #eff6ff;
+        border-color: #93c5fd;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+        .history-page {
+            padding: 25px 14px 40px;
+        }
+
+        .page-title {
+            font-size: 25px;
+        }
+
+        .history-card {
+            padding: 16px;
+        }
+
+        .history-item {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .history-time {
+            white-space: normal;
+            padding-left: 58px;
+        }
+    }
 </style>
+```
+
+
+
+
 
 </head>
 

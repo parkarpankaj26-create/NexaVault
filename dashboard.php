@@ -427,6 +427,63 @@ $userInitial = strtoupper(
     rel="stylesheet"
     href="assets/css/dashboard.css?v=301">
 
+
+<style>
+/* NexaVault Dashboard: larger Quick Access cards and text; functionality/colors preserved. */
+body { font-size: 16px; }
+.nv-dashboard-brand .dashboard-brand-text strong { font-size: 1.35rem !important; }
+.nv-dashboard-brand .dashboard-brand-text small { font-size: 0.82rem !important; }
+.dashboard-nav-link, .user-menu { font-size: 1rem !important; }
+.dropdown-menu, .dropdown-item, .dropdown-header { font-size: 1rem !important; }
+.dashboard-welcome h1 { font-size: clamp(2rem, 2.7vw, 2.65rem) !important; }
+.dashboard-welcome p { font-size: 1.12rem !important; }
+.welcome-badge { font-size: 0.92rem !important; }
+.welcome-meta, .welcome-meta span { font-size: 0.95rem !important; }
+.nv-upload-btn, .panel-upload-btn { font-size: 1rem !important; }
+.dashboard-stat-card .stat-content > span { font-size: 1rem !important; }
+.dashboard-stat-card .stat-content h2 { font-size: 2.1rem !important; }
+.dashboard-stat-card .stat-content h2 small { font-size: 1rem !important; }
+.dashboard-stat-card .stat-content > small,
+.storage-progress small { font-size: 0.9rem !important; }
+.section-label { font-size: 0.82rem !important; }
+.section-title-row h3, .panel-header h3 { font-size: 1.45rem !important; }
+.quick-action-card { min-height: 122px !important; padding: 16px !important; display: flex !important; flex-direction: column !important; justify-content: flex-start !important; gap: 7px !important; }
+.quick-action-card .quick-icon { width: 42px !important; height: 42px !important; min-width: 42px !important; font-size: 1.2rem !important; display: flex !important; align-items: center !important; justify-content: center !important; }
+.quick-action-card .quick-icon i { font-size: 1.2rem !important; }
+.quick-action-card strong { font-size: 1.15rem !important; line-height: 1.35 !important; }
+.quick-action-card small { font-size: 1rem !important; line-height: 1.35 !important; }
+.search-box input, .sort-form .form-select, .filter-btn { font-size: 0.95rem !important; }
+.nv-file-table thead th { font-size: 0.95rem !important; }
+.nv-file-table tbody td { font-size: 1rem !important; }
+.file-name strong { font-size: 1rem !important; }
+.file-name small { font-size: 0.88rem !important; }
+.file-tags { font-size: 0.84rem !important; }
+.file-size, .file-type-badge, .download-count { font-size: 0.92rem !important; }
+.file-actions .action-btn, .file-actions .btn { font-size: 0.95rem !important; }
+.empty-files h4 { font-size: 1.35rem !important; }
+.empty-files p { font-size: 1rem !important; }
+.analytics-legend, .analytics-legend strong { font-size: 1rem !important; }
+.security-status-row strong { font-size: 1rem !important; }
+.security-status-row small { font-size: 0.9rem !important; }
+.activity-view { font-size: 0.95rem !important; }
+.activity-details strong { font-size: 0.98rem !important; }
+.activity-details small, .no-activity p { font-size: 0.9rem !important; }
+.dashboard-footer { font-size: 0.92rem !important; }
+.dashboard-footer strong { font-size: 1.15rem !important; }
+@media (max-width: 576px) {
+  .dashboard-welcome h1 { font-size: 1.85rem !important; }
+  .dashboard-welcome p { font-size: 1rem !important; }
+  .dashboard-stat-card .stat-content h2 { font-size: 1.8rem !important; }
+  .section-title-row h3, .panel-header h3 { font-size: 1.25rem !important; }
+  .quick-action-card { min-height: 118px !important; padding: 12px !important; gap: 6px !important; }
+  .quick-action-card .quick-icon { width: 38px !important; height: 38px !important; min-width: 38px !important; }
+  .quick-action-card strong { font-size: 1.02rem !important; }
+  .quick-action-card small { font-size: 0.92rem !important; }
+  .quick-action-card small { font-size: 0.84rem !important; }
+  .nv-file-table tbody td { font-size: 0.92rem !important; }
+}
+</style>
+
 </head>
 
 
